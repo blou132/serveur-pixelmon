@@ -1,64 +1,36 @@
 # Serveur Pixelmon (NeoForge 1.21.1)
 
-Ce depot sert de pense-bete pour installer/reinstaller le serveur, et contient aussi un petit pack de mods **cote client** (dossier `mods/`).
+Ce depot contient les **mods cote client** (dossier `mods/`) et un ZIP pret a telecharger.
 
-Note importante:
-- Le mod Pixelmon (jar universal) et le modpack ne sont pas versionnes ici (fichiers lourds + licences). On utilise le server pack officiel / le modpack officiel.
+## Telechargement (mods client)
 
-## Telechargement rapide (mods client)
+1. ZIP des mods additionnels (28 mods, sans Pixelmon):
+   https://github.com/blou132/serveur-pixelmon/raw/main/client-mods.zip
 
-- ZIP (contient le dossier `mods/`) : https://github.com/blou132/serveur-pixelmon/archive/refs/heads/main.zip
+2. Pixelmon `9.3.14` (jar universal) doit etre telecharge a part depuis le site officiel Pixelmon.
+   Important: Pixelmon n'est pas inclus dans ce depot (fichier tres lourd + regles de distribution).
+   Site officiel: https://reforged.gg/
 
-## Versions (serveur)
+Au final, ton dossier `.minecraft/mods/` doit contenir 29 mods:
+- 28 jars venant de `client-mods.zip`
+- + `Pixelmon-1.21.1-9.3.14-universal.jar`
+
+## Versions
 
 - Minecraft: `1.21.1`
-- Modloader: `NeoForge 21.1.200`
-- Pixelmon: `9.3.14`
+- NeoForge: `21.1.200`
 - Java: `21`
+- Pixelmon: `9.3.14`
 
-## Mods serveur (stabilite / performance)
+## Installation (client)
 
-Sur le serveur (dans `/opt/minecraft/forge/servers/mods`), on utilise en plus des mods gameplay/worldgen une selection de mods perfs/stabilite:
+1. Installe Minecraft Java `1.21.1`.
+2. Installe NeoForge `21.1.200` (installer -> "Install client").
+3. Lance Minecraft avec le profil NeoForge une premiere fois (pour creer `.minecraft/mods/`).
+4. Ajoute `Pixelmon-1.21.1-9.3.14-universal.jar` dans `.minecraft/mods/`.
+5. Dezippe `client-mods.zip` dans `.minecraft/mods/` (ne supprime pas Pixelmon).
+6. Lance le jeu.
 
-- ModernFix, Lithium, FerriteCore, Alternate Current
-- ServerCore, Saturn, Ksyxis, Noisium, ScalableLux
-- Let Me Despawn (+ Almanac), Clumps, Get It Together Drops, Leaves Be Gone (+ Puzzles Lib)
-- Structure Layout Optimizer (+ Resourceful Config)
-- Chunky (pregeneration), spark (profiling)
-- CrashExploitFixer, Achievements Optimizer
+## RAM (client)
 
-Note:
-- WonderTrade a ete desactive car il faisait crasher le serveur (probleme de driver SQLite/H2).
-
-## Installation client
-
-Option la plus simple: installer "The Pixelmon Modpack" en version `9.3.14` via un launcher compatible (CurseForge/Prism).
-
-Le client doit etre sur:
-- Minecraft `1.21.1`
-- NeoForge `21.1.200`
-- Pixelmon `9.3.14`
-
-### Installer NeoForge (client) manuellement
-
-Si tu passes par le modpack CurseForge/Prism, NeoForge est generalement installe automatiquement. Sinon:
-
-1. Telecharge l'installer NeoForge (jar) en version `21.1.200` (pour Minecraft `1.21.1`).
-2. Lance l'installer:
-```bash
-java -jar neoforge-21.1.200-installer.jar
-```
-3. Choisis "Install client".
-4. Ouvre le Minecraft Launcher, va dans "Installations", puis lance le profil NeoForge une premiere fois.
-5. Ensuite seulement, ajoute les mods dans `.minecraft/mods/`.
-
-### Mods client additionnels (ce depot)
-
-Le dossier `mods/` de ce depot contient des mods QOL (carte, JEI, inventaire, etc.).
-
-1. Installe le modpack Pixelmon `9.3.14` normalement.
-2. Copie les `.jar` de `mods/` vers `.minecraft/mods/`.
-3. Lance le jeu.
-
-Important:
-- Ne copie pas le jar Pixelmon universal dans ce depot (trop lourd + licence). Garde-le via le modpack.
+Si tu as des crash `OutOfMemoryError: Java heap space`, augmente la RAM dans le launcher (ex: `-Xmx6G` ou `-Xmx8G`).

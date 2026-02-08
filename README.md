@@ -5,6 +5,10 @@ Ce depot sert de pense-bete pour installer/reinstaller le serveur, et contient a
 Note importante:
 - Le mod Pixelmon (jar universal) et le modpack ne sont pas versionnes ici (fichiers lourds + licences). On utilise le server pack officiel / le modpack officiel.
 
+## Telechargement rapide (mods client)
+
+- ZIP (contient le dossier `mods/`) : https://github.com/blou132/serveur-pixelmon/archive/refs/heads/main.zip
+
 ## Versions (serveur)
 
 - Minecraft: `1.21.1`

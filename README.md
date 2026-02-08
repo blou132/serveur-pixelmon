@@ -30,30 +30,6 @@ Sur le serveur (dans `/opt/minecraft/forge/servers/mods`), on utilise en plus de
 Note:
 - WonderTrade a ete desactive car il faisait crasher le serveur (probleme de driver SQLite/H2).
 
-## Installation serveur (Linux)
-
-1. Telecharge le server pack officiel:
-```txt
-https://edge.forgecdn.net/files/7454/494/serverpack9314.zip
-```
-
-2. Dezippe le contenu dans le dossier du serveur (ex: `/opt/minecraft/forge/servers`).
-
-3. Verifie que `start.sh` est executable:
-```bash
-chmod +x start.sh
-```
-
-4. (Optionnel) Ajuste la RAM dans `variables.txt`:
-```txt
-JAVA_ARGS="-Xmx10G -Xms10G"
-```
-
-5. Lance le serveur:
-```bash
-./start.sh
-```
-
 ## Installation client
 
 Option la plus simple: installer "The Pixelmon Modpack" en version `9.3.14` via un launcher compatible (CurseForge/Prism).

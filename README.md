@@ -63,6 +63,19 @@ Le client doit etre sur:
 - NeoForge `21.1.200`
 - Pixelmon `9.3.14`
 
+### Installer NeoForge (client) manuellement
+
+Si tu passes par le modpack CurseForge/Prism, NeoForge est generalement installe automatiquement. Sinon:
+
+1. Telecharge l'installer NeoForge (jar) en version `21.1.200` (pour Minecraft `1.21.1`).
+2. Lance l'installer:
+```bash
+java -jar neoforge-21.1.200-installer.jar
+```
+3. Choisis "Install client".
+4. Ouvre le Minecraft Launcher, va dans "Installations", puis lance le profil NeoForge une premiere fois.
+5. Ensuite seulement, ajoute les mods dans `.minecraft/mods/`.
+
 ### Mods client additionnels (ce depot)
 
 Le dossier `mods/` de ce depot contient des mods QOL (carte, JEI, inventaire, etc.).

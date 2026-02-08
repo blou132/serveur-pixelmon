@@ -1,9 +1,9 @@
 # Serveur Pixelmon (NeoForge 1.21.1)
 
-Ce depot sert de pense-bete pour installer/reinstaller le serveur.
+Ce depot sert de pense-bete pour installer/reinstaller le serveur, et contient aussi un petit pack de mods **cote client** (dossier `mods/`).
 
 Note importante:
-- Le mod Pixelmon et le modpack ne sont pas versionnes ici (fichiers lourds + licences). On utilise le server pack officiel.
+- Le mod Pixelmon (jar universal) et le modpack ne sont pas versionnes ici (fichiers lourds + licences). On utilise le server pack officiel / le modpack officiel.
 
 ## Versions (serveur)
 
@@ -11,6 +11,20 @@ Note importante:
 - Modloader: `NeoForge 21.1.200`
 - Pixelmon: `9.3.14`
 - Java: `21`
+
+## Mods serveur (stabilite / performance)
+
+Sur le serveur (dans `/opt/minecraft/forge/servers/mods`), on utilise en plus des mods gameplay/worldgen une selection de mods perfs/stabilite:
+
+- ModernFix, Lithium, FerriteCore, Alternate Current
+- ServerCore, Saturn, Ksyxis, Noisium, ScalableLux
+- Let Me Despawn (+ Almanac), Clumps, Get It Together Drops, Leaves Be Gone (+ Puzzles Lib)
+- Structure Layout Optimizer (+ Resourceful Config)
+- Chunky (pregeneration), spark (profiling)
+- CrashExploitFixer, Achievements Optimizer
+
+Note:
+- WonderTrade a ete desactive car il faisait crasher le serveur (probleme de driver SQLite/H2).
 
 ## Installation serveur (Linux)
 
@@ -45,3 +59,13 @@ Le client doit etre sur:
 - NeoForge `21.1.200`
 - Pixelmon `9.3.14`
 
+### Mods client additionnels (ce depot)
+
+Le dossier `mods/` de ce depot contient des mods QOL (carte, JEI, inventaire, etc.).
+
+1. Installe le modpack Pixelmon `9.3.14` normalement.
+2. Copie les `.jar` de `mods/` vers `.minecraft/mods/`.
+3. Lance le jeu.
+
+Important:
+- Ne copie pas le jar Pixelmon universal dans ce depot (trop lourd + licence). Garde-le via le modpack.

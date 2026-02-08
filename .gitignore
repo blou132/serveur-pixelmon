@@ -1,0 +1,7 @@
+# Avoid accidentally committing Pixelmon jars (very large + license).
+mods/Pixelmon-*-universal.jar
+mods/Pixelmon-*-server.jar
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

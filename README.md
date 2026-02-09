@@ -2,6 +2,10 @@
 
 Ce depot contient les **mods cote client** (dossier `mods/`) et un ZIP pret a telecharger.
 
+## Adresse du serveur
+
+- `90.59.218.80:25565`
+
 ## Telechargement (mods client)
 
 1. ZIP des mods additionnels (28 mods, sans Pixelmon):
